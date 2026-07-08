@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/*
+===== Variables =====
+*/
+
+:root {
+  /*
+    Las variables son peque;os contenedores de informacion que puedes utilizar
+    para reutilizar un estilo declarandolo una sola vez y utilizar ese estilo por toda
+    la pagina
+  */
+  --text-color-main: white;
+  --size-titles: 64px;
+  --size-subtitles: 24px;
+  --size-highlights-paragraphs: 19px;
+  --size-paragraphs: 14px;
+  --gap-standard: 12px;
+  --padding-standard: 32px;
+  --color-button: #4e515ae3;
+}
+
+/*
+===== General =====
+*/
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+  color: var(--text-color-main);
+}
+
+button {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.rows {
+  display: flex;
+  flex-direction: row;
+}
+
+.columns {
+  display: flex;
+  flex-direction: column;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.white-button {
+  background-color: white;
+  color: rgb(60, 60, 60);
+  padding: 8px 24px;
+  border-radius: 4px;
+  font-weight: 800;
+}
+
+.grey-button {
+  background-color: var(--color-button);
+  padding: 8px 24px;
+  border-radius: 4px;
+  font-weight: 800;
+}
+
+/*
+===== Seccion 1, header con imagen del satelite =====
+*/
+
+header {
+  background-image: linear-gradient(to right,rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(https://starlink.com/assets-new/images/landing/field/v4_night_sky.webp);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+/*===== Menu navegacion =====*/
+
+.start-menu {
+  padding: 35px;
+  gap: var(--gap-standard);
+  align-items: center;
+  justify-items: center;
+  font-size: var(--size-paragraphs);
+  font-weight: 600;
+}
+
+.buttons-menu {
+  background-color: var(--color-button);
+  padding: 2px;
+  border-radius: 8px;
+  margin-right: 15px;
+}
+
+.button-active {
+  padding: 6px 12px;
+  background-color: rgba(199, 199, 199, 0.411);
+  border-radius: 8px;
+}
+
+.button-inactive {
+  padding: 6px 12px;
+  background-color: transparent;
+}
+
+.circular-button {
+  border-radius: 100%;
+  padding: 10px;
+  background-color: var(--color-button);
+}
+
+#logo {
+  letter-spacing: 4px;
+  font-size: 20px;
+  margin-right: 20px;
+  font-weight: 800;
+}
+
+/*===== Texto principal =====*/
+
+.principal-text {
+  display: grid;
+  grid-template-columns: 15% 35% 50%;
+  margin-top: 120px;
+}
+
+.principal-text h1 {
+  font-size: var(--size-titles);
+}
+
+.principal-text h2 {
+  font-size: var(--size-titles);
+  margin-top: 5px;
+}
+
+.principal-text h2 > span{
+  font-size: var(--size-highlights-paragraphs);
+  color: rgb(180, 180, 180);
+
+}
+
+.principal-text p{
+  font-size: var(--size-paragraphs);
+  font-weight: 600;
+  color: rgb(180, 180, 180);
+  margin-top: 25px;
+}
+
+.principal-text button{
+  margin-top: 50px;
+}
+
+.location-grid {
+  grid-column: 2 / 3;
+}
+
+/*
+===== Seccion 2, precios =====
+*/
+
+.section-2 {
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(https://starlink.com/assets-new/images/landing/illustrations/illustration_08.webp);;  
+  background-color: #000;
+  background-size: 70%, cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 80vh;
+}
+
+/*
+===== Seccion 3, fiable y resistente =====
+*/
+
+.section-3 {
+  background-image: url(https://starlink.com/assets-new/images/landing/field/v4_lightning.webp);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+/*
+===== Seccion 4, movilidad =====
+*/
+
+.section-4 {
+  background-image: url(https://starlink.com/assets-new/images/landing/field/v4_car_on_ice.webp);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+/*
+===== Seccion 5, adaptable =====
+*/
+
+.section-5 {
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(https://starlink.com/assets-new/images/landing/illustrations/illustration_08.webp);;  
+  background-color: #000;
+  background-size: 70%, cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 120vh;
+}
+
+/*
+===== Seccion 6, disponibilidad =====
+*/
+
+.section-6 {
+  background-image: url(https://starlink.com/assets-new/images/landing/field/v4_green_roof.webp);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+/*
+===== Seccion 7, conexion =====
+*/
+
+.section-7 {
+  background-image: url(https://starlink.com/assets-new/images/landing/field/v4_residential_yard.webp);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+/*
+===== Links de consultas =====
+*/
+
+footer {
+  background-color: #000;
+  height: 12vh;
+}

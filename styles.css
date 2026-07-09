@@ -145,7 +145,7 @@ header {
 
 }
 
-.principal-text p{
+.principal-text p {
   font-size: var(--size-paragraphs);
   font-weight: 600;
   color: rgb(180, 180, 180);
@@ -166,10 +166,10 @@ header {
 
 .section-2 {
   background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(https://starlink.com/assets-new/images/landing/illustrations/illustration_08.webp);;  
-  background-color: #000;
   background-size: 70%, cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-color: #000;
   width: 100%;
   height: 80vh;
 }
@@ -179,10 +179,39 @@ header {
 */
 
 .section-3 {
-  background-image: url(https://starlink.com/assets-new/images/landing/field/v4_lightning.webp);
+  background-image: linear-gradient(to right,rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(https://starlink.com/assets-new/images/landing/field/v4_lightning.webp);
   background-size: cover;
   background-position: center;
   height: 100vh;
+}
+
+.grid-text-3 {
+  display: grid;
+  grid-template-columns: 15% 40% 55%;
+  width: 100%;
+  height: 100%;
+  align-content: center;
+}
+
+.grid-text-3 div {
+  grid-column: 2 / 3;
+}
+
+.grid-text-3 div > h2 {
+  font-size: var(--size-titles);
+  margin-top: 5px;
+}
+
+.grid-text-3 div > p {
+  font-size: var(--size-highlights-paragraphs);
+  font-weight: 600;
+  color: rgb(180, 180, 180);
+  margin-top: 25px;
+}
+
+.grid-text-3 div > button {
+  margin-top: 50px;
+  width: 150px;
 }
 
 /*
@@ -190,10 +219,39 @@ header {
 */
 
 .section-4 {
-  background-image: url(https://starlink.com/assets-new/images/landing/field/v4_car_on_ice.webp);
+  background-image: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0)), url(https://starlink.com/assets-new/images/landing/field/v4_car_on_ice.webp);
   background-size: cover;
   background-position: center;
   height: 100vh;
+}
+
+.grid-text-4 {
+  display: grid;
+  grid-template-columns: 15% 40% 45%;
+  width: 100%;
+  height: 100%;
+  align-content: center;
+}
+
+.grid-text-4 div {
+  grid-column: 2 / 3;
+}
+
+.grid-text-4 div > h2 {
+  font-size: var(--size-titles);
+  margin-top: 5px;
+}
+
+.grid-text-4 div > p {
+  font-size: var(--size-highlights-paragraphs);
+  font-weight: 600;
+  color: rgb(180, 180, 180);
+  margin-top: 25px;
+}
+
+.grid-text-4 div > button {
+  margin-top: 50px;
+  width: 150px;
 }
 
 /*
@@ -215,10 +273,39 @@ header {
 */
 
 .section-6 {
-  background-image: url(https://starlink.com/assets-new/images/landing/field/v4_green_roof.webp);
+  background-image: linear-gradient(to left, rgba(0,0,0,0.6), rgba(0,0,0,0)), url(https://starlink.com/assets-new/images/landing/field/v4_green_roof.webp);
   background-size: cover;
   background-position: center;
   height: 100vh;
+}
+
+.grid-text-6 {
+  display: grid;
+  grid-template-columns: 50% 40% 10%;
+  width: 100%;
+  height: 100%;
+  align-content: center;
+}
+
+.grid-text-6 div {
+  grid-column: 2 / 3;
+}
+
+.grid-text-6 div > h2 {
+  font-size: var(--size-titles);
+  margin-top: 5px;
+}
+
+.grid-text-6 div > p {
+  font-size: var(--size-highlights-paragraphs);
+  font-weight: 600;
+  color: rgb(180, 180, 180);
+  margin-top: 25px;
+}
+
+.grid-text-6 div > button {
+  margin-top: 50px;
+  width: 230px;
 }
 
 /*
@@ -226,10 +313,39 @@ header {
 */
 
 .section-7 {
-  background-image: url(https://starlink.com/assets-new/images/landing/field/v4_residential_yard.webp);
+  background-image: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0)), url(https://starlink.com/assets-new/images/landing/field/v4_residential_yard.webp);
   background-size: cover;
   background-position: center;
   height: 100vh;
+}
+
+.grid-text-7 {
+  display: grid;
+  grid-template-columns: 15% 40% 45%;
+  width: 100%;
+  height: 100%;
+  align-content: center;
+}
+
+.grid-text-7 div {
+  grid-column: 2 / 3;
+}
+
+.grid-text-7 div > h2 {
+  font-size: var(--size-titles);
+  margin-top: 5px;
+}
+
+.grid-text-7 div > p {
+  font-size: var(--size-highlights-paragraphs);
+  font-weight: 600;
+  color: rgb(180, 180, 180);
+  margin-top: 25px;
+}
+
+.grid-text-7 div > button {
+  margin-top: 50px;
+  width: 230px;
 }
 
 /*
@@ -238,5 +354,19 @@ header {
 
 footer {
   background-color: #000;
-  height: 12vh;
+  height: 100px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-rows: 2;
+  height: 100%;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.footer-grid nav {
+  display: flex;
+  gap: 20px;
+  font-size: var(--size-paragraphs);
 }
